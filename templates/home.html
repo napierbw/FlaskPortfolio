@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Benjamin Napier Portfolio</title>
+
+    <!-- Stylesheet -->
+   <link rel="stylesheet" href="{{ url_for('static',     filename='css/home.css') }}">
+
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+
+
+    <!-- Parallax -->
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">SCROLL DOWN</span>
+        </div>
+    </div>
+
+
+    <!-- Two Column Section -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-6">
+                <h2>Boids!</h2>
+                <p>Boids is an artificial life program, developed by Craig Reynolds in 1986, which simulates the flocking behaviour of birds. This particular experiment uses P5.js to simulate flocking.</p>
+                <p>This project was inspired by Daniel Shiffman from <a href="https://thecodingtrain.com/CodingChallenges/124-flocking-boids.html">The Coding Train</a>.</p>
+                <p>Go ahead and play around with the sliders now!</p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <iframe style="width: 640px; height: 480px; overflow: hidden;" scrolling="no" frameborder="0" src="https://editor.p5js.org/napierbw/embed/wxcdmBg2x"></iframe>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    {% endblock %}
+  </body>
+</html>
